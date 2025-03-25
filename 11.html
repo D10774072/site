@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// 修正变量声明错误，获取a、b、c
+let a = prompt("请输入系数a:");
+let b = prompt("请输入系数b:");
+let c = prompt("请输入系数c:");
+
+// 转换为数字
+a = parseFloat(a);
+b = parseFloat(b);
+c = parseFloat(c);
+
+// 计算判别式delta
+const delta = b * b - 4 * a * c;
+// 计算方程的根（假设delta >= 0且a > 0）
+const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+// 输出结果
+alert(`方程的解为：x1 = ${x1}，x2 = ${x2}`);
+console.log(`x1: ${x1}, x2: ${x2}`);
+</script>
+</body>
+</html>
