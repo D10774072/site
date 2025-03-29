@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF - 8">
+    <title>Quadratic Equation Solver</title>
+</head>
+
+<body>
+    <form method="post">
+        <input type="number" name="a" placeholder="a">x² +
+        <input type="number" name="b" placeholder="b">x +
+        <input type="number" name="c" placeholder="c"> = 0
+        <input type="submit" value="Solve">
+    </form>
+    {% if result %}
+    <div>Solution area: {{ result }}</div>
+    {% endif %}
+</body>
+
+</html>
